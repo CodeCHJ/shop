@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--BOOTSTRAP-4-->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <!--FONTS-GOOGLE-->
+       <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+       <!--SCROLL-REWEAL-->
+       <script src="https://unpkg.com/scrollreveal"></script>
+       <!--CUSTOM-CSS-->
+       <link rel="stylesheet" href="css/buy.css">
+       <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+       <!--FONTAWESOME-5-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <title>Buy Product</title>
+</head>
+
+<body>
+
+
+       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+              <a class="navbar-brand" href="#">
+                     <img src="../img/logo.png" class="d-inline-block align-top" height="40">
+                     SHOP TAGLINE HERE
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                   <a class="nav-link" href="../index.html#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                   <a class="nav-link" href="../index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                   <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                   <a class="nav-link" href="#">Products</a>
+                            </li>
+                     </ul>
+              </div>
+       </nav>
+
+       <!--PRODUCTS-SECTION-->
+       <header class="container pt-5 text-center">
+              <h1 class="m-4">Buy Product</h1>
+              <form class="card mt-5">
+                     <div class="card-body container text-left">
+                            <div class="form-group">
+                                   <label for="name" class="lead">Full name: <span class="red">*</span></label>
+                                   <br>
+                                   <div class="row">
+                                          <div class="col-md-6">
+                                                 <input type="text" class="form-control" placeholder="Name" required>
+                                          </div>
+                                          <div class="col-md-6">
+                                                 <input type="text" class="form-control" placeholder="Last Name" required>
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="form-group mt-5">
+                                   <label class="lead" for="card-number">Credit card number: <span class="red">*</span><span class="mr-auto"><img src="../img/tarjetas.png" style="width: 10%;"></span></label>
+                                   <br>
+                                   <input minlength="24" maxlength="24" class="form-control" type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX" required>
+                            </div>
+                            <div class="form-group mt-5">
+                                   <div class="row">
+                                          <div class="col-md-6">
+                                                 <label for="security-code" class="lead">Security code: <span class="red">*</span></label>
+                                                 <input type="number" class="form-control" placeholder="CVC" minlength="3" maxlength="3" required>
+                                          </div>
+                                          <div class="col-md-6">
+                                                 <label for="card-expiration" class="lead">Card expiration: <span class="red">*</span></label>
+                                                 <input type="month" value="yyyy/mm" class="form-control" placeholder="MM / YY" required>
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="my-4">
+                                   <span class="lead p red">All fields marked with an asterisk (*) are required!</span>
+                            </div>
+                            <div class="form-group text-left my-5">
+                                   <input type="submit" class="btn btn-outline-secondary btn-block" value="Buy Now">
+                            </div>
+                     </div>
+              </form>
+       </header>
+
+       <!--FOOTER-->
+       <footer class="bg-dark p-3 mt-5">
+              <div class="row">
+                     <div class="col-md-6 text-center left">
+                            <a href="#" class="card-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="card-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="card-link"><i class="fab fa-facebook"></i></a>
+                     </div>
+                     <div class="col-md-6 text-right right">
+                            <h2>Lorem, ipsum.</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet.</p>
+                     </div>
+              </div>
+              <div class="row text-center bottom">
+                     <p class="lead">Copyright (c) 2019-2022 <a href="../index.html" class="card-link">shoptaglinehere.com</a> All Rights Reserved.</p>
+              </div>
+       </footer>
+
+
+       <!--BOOTSTRAP-4-SCRIPT-->
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <script>
+              window.sr = ScrollReveal();
+              sr.reveal('.right', {
+                     duration: 2000,
+                     origin: 'right',
+                     distance: '30px'
+              });
+              sr.reveal('.left', {
+                     duration: 2000,
+                     origin: 'left',
+                     distance: '50px'
+              });
+              sr.reveal('.top', {
+                     duration: 2000,
+                     origin: 'top',
+                     distance: '300px'
+              });
+              sr.reveal('.bottom', {
+                     duration: 2000,
+                     origin: 'bottom',
+                     distance: '3px'
+              });
+
+              document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                     anchor.addEventListener('click', function (e) {
+                            e.preventDefault();
+
+                            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                                   behavior: 'smooth'
+                            });
+                     });
+              });
+       </script>
+</body>
+
+</html>
